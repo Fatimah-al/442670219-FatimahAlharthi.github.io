@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>CV FORM</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="n">Name</label>
+            <br />
+            <input type="text" id="n"
+                   name="n" />
+            <br />
+            <br />
+            <label for="G">Gender:</label>
+            <input type="radio" id="M"
+                   name="M" value="Male" />
+            <label for="M">Male</label>
+            <input type="radio" id="F"
+                   name="F" value="Female" />
+
+            <label for="F">Female</label>
+            <br />
+            <br />
+            <label for="phone">Enter a phone number :</label>
+            <br />
+            <br />
+            <input type="tel" id="phone" name="phone"
+                   placeholder="555-55-555" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+            <small>format :555-55-555</small>
+            <br />
+            <br />
+            <label for="homepage">Enter your linkedin page :</label>
+            <input type="url" id="homepage" name="homepage" />
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" />
+        </fieldset>
+        <br />
+        <label for="quantity">Years of experience(between 3 and 10):</label>
+        <input type="number" id="quantity" name="quantity" min="3" max="10" />
+        <br />
+        <br />
+        <label for="salary"> expected salary:</label>
+        <label for="4000">4000</label>
+        <input type="range" id="salary" name="salary" min="4000" max="10000" />
+        <label for="10000">10000</label>
+        <br />
+        <br />
+        <label for="l">language:</label>
+        <br />
+        <input type="checkbox" id="A" name="A" value="Arabic" />
+        <label for="A">Arabic</label>
+        <br />
+        <input type="checkbox" id="E" name="E" value="English" />
+        <label for="E">English</label>
+        <br />
+        <br />
+        <label for="myfile">Upload your CV:</label>
+        <input type="file" id="myfile" name="myfile" />
+        <br />
+        <br />
+        <label for="week">The nearest week you can start work</label>
+        <input type="week" id="week" name="week" />
+        <br />
+        <br />
+        <label for="month">The nearest month you can start work</label>
+        <input type="month" id="month" name="month" />
+        <br />
+        <br />
+        <label for="time">The best time to work</label>
+        <input type="time" id="time" name="time" />
+        <br />
+        <br />
+        <label for="major">Majors</label>
+        <input type="text" id="major" name="major" />
+        <input type="hidden"  id="h" name="h" value="5000" />
+        <br />
+        <br />
+        <label for="t">why you want work with us </label>
+        <br />
+        <textarea name="message" width="120" high="700"></textarea>
+        <br />
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+    </form>
+    
+</body>
+</html>
