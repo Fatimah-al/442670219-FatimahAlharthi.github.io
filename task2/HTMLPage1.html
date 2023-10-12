@@ -1,0 +1,16 @@
+﻿<!doctype html>
+ <html lang="en">  <head>   
+     <title>Welcome Message</title>  </head> 
+ <body>   <label>Name </label>&nbsp;
+     <input type="text" name="pname" id="pname"></input><br><br>   
+     <input type="button" name="btncal" value="Submit" onclick="display()"></input>  
+     <p id="msg" style="font-weight:bold;font-size:16px;"></p>   
+     <script language="javascript">   
+         function display() {
+             var msg = "";
+             var pname = document.getElementById("pname").value;
+             const dat = new Date(); var hour = dat.getHours(); if (hour >= 0 && hour < 12) { msg = "Good Morning"; }
+             if (hour >= 12 && hour < 24) { msg = "Good Afternoon"; } var w_msg = msg + " " + pname;
+             document.getElementById("msg").innerHTML = w_msg;
+         }
+         </script>  </body> </html>
